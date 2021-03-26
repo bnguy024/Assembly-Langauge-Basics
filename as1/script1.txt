@@ -1,0 +1,190 @@
+Script started on 2020-02-03 22:38:50-07:00
+]0;brandon.nguyen1@csa2:~/assignment_1brandon.nguyen1@csa2:~/assignment_1$ d[Kgdb assign1a
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1a...(no debugging symbols found)...done.
+(gdb) b ru[K[K[K a[Kmi[Kain 
+Breakpoint 1 at 0x4005e4
+(gdb) r
+Starting program: /home/ugd/brandon.nguyen1/assignment_1/assign1a 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Breakpoint 1, 0x00000000004005e4 in main ()
+(gdb) display [K/i $[K[K[K[K $ [Kpc 
+1: $pc = (void (*)()) 0x4005e4 <main+4>
+(gdb) ni
+0x00000000004005e8 in main ()
+1: $pc = (void (*)()) 0x4005e8 <main+8>
+(gdb) ni
+0x00000000004005ec in main ()
+1: $pc = (void (*)()) 0x4005ec <main+12>
+(gdb) x[Kp $19 [K[K[Kx19 
+$1 = -10
+(gdb) ni
+0x00000000004005f0 in test ()
+1: $pc = (void (*)()) 0x4005f0 <test>
+(gdb) p [K[Kni 
+0x00000000004005f4 in test ()
+1: $pc = (void (*)()) 0x4005f4 <test+4>
+(gdb) ni
+0x00000000004005f8 in test ()
+1: $pc = (void (*)()) 0x4005f8 <test+8>
+(gdb) pc x [K24[K[K[K[K[K[Kp $x24
+$2 = 0
+(gdb) px[K $s[Kx20 
+$3 = 0
+(gdb) ni
+0x00000000004005fc in test ()
+1: $pc = (void (*)()) 0x4005fc <test+12>
+(gdb) p $x20
+$4 = 0
+(gdb) ni
+0x0000000000400600 in test ()
+1: $pc = (void (*)()) 0x400600 <test+16>
+(gdb) nip $x20
+$5 = -14
+(gdb) ni
+0x0000000000400604 in test ()
+1: $pc = (void (*)()) 0x400604 <test+20>
+(gdb) nip $x20[K4
+$6 = -44
+(gdb) p $x24[4Pni
+0x0000000000400608 in test ()
+1: $pc = (void (*)()) 0x400608 <test+24>
+(gdb) nip $x24
+$7 = 440
+(gdb) p $x24[4Pni
+0x000000000040060c in test ()
+1: $pc = (void (*)()) 0x40060c <test+28>
+(gdb) nip $x24[K9[K0
+$8 = 426
+(gdb) ni
+0x0000000000400610 in test ()
+1: $pc = (void (*)()) 0x400610 <test+32>
+(gdb) nip $x20[K4
+$9 = -145
+(gdb) p $x24[4Pni
+0x0000000000400614 in test ()
+1: $pc = (void (*)()) 0x400614 <test+36>
+(gdb) nip $x24
+$10 = 1450
+(gdb) p $x24[4Pni
+0x0000000000400618 in test ()
+1: $pc = (void (*)()) 0x400618 <test+40>
+(gdb) nip $x24
+$11 = -14500
+(gdb) p $x24[4Pni
+0x000000000040061c in test ()
+1: $pc = (void (*)()) 0x40061c <test+44>
+(gdb) x20[K[K[Kp $x20
+$12 = -14074
+(gdb) ni
+0x0000000000400620 in test ()
+1: $pc = (void (*)()) 0x400620 <test+48>
+(gdb) x[Kp $s[Kx24
+$13 = 2
+(gdb) p $x24[4Pni
+0x0000000000400624 in test ()
+1: $pc = (void (*)()) 0x400624 <test+52>
+(gdb) nip $x24
+$14 = -20
+(gdb) p $x24[4Pni
+0x0000000000400628 in test ()
+1: $pc = (void (*)()) 0x400628 <test+56>
+(gdb) nip $x24
+$15 = 200
+(gdb) p $x24[4Pni
+0x000000000040062c in test ()
+1: $pc = (void (*)()) 0x40062c <test+60>
+(gdb) nip $x24
+$16 = -2000
+(gdb) p $x24[4Pni
+0x0000000000400630 in test ()
+1: $pc = (void (*)()) 0x400630 <test+64>
+(gdb) nip $x24
+$17 = 20000
+(gdb) p $x24[4Pni
+0x0000000000400634 in test ()
+1: $pc = (void (*)()) 0x400634 <test+68>
+(gdb) nip $x24[K0
+$18 = 5926
+(gdb) ni
+0x0000000000400638 in cmpv ()
+1: $pc = (void (*)()) 0x400638 <cmpv>
+(gdb) ni
+0x000000000040063c in cmpv ()
+1: $pc = (void (*)()) 0x40063c <cmpv+4>
+(gdb) ni
+0x0000000000400644 in print ()
+1: $pc = (void (*)()) 0x400644 <print>
+(gdb) ni
+0x0000000000400648 in print ()
+1: $pc = (void (*)()) 0x400648 <print+4>
+(gdb) ni
+0x000000000040064c in print ()
+1: $pc = (void (*)()) 0x40064c <print+8>
+(gdb) ni
+0x0000000000400650 in print ()
+1: $pc = (void (*)()) 0x400650 <print+12>
+(gdb) nip $x20[4Pnip $x24[4Pnip $x20[K[K1
+$19 = -10
+(gdb) p $x1[3Pni
+0x0000000000400654 in print ()
+1: $pc = (void (*)()) 0x400654 <print+16>
+(gdb) nip $x1[K2
+$20 = 5926
+(gdb) p $x2[3Pni
+0x0000000000400658 in print ()
+1: $pc = (void (*)()) 0x400658 <print+20>
+(gdb) nip $x2[K3
+$21 = 0
+(gdb) p $x3[3Pni
+When x is -10 and y is equal to 5926 then minimum of the function is 0
+0x000000000040065c in print ()
+1: $pc = (void (*)()) 0x40065c <print+24>
+(gdb) ni=[K[K[Kc
+Continuing.
+When x is -9 and y is equal to 1759 then minimum of the function is 0
+When x is -8 and y is equal to -750 then minimum of the function is -750
+When x is -7 and y is equal to -2009 then minimum of the function is -2009
+When x is -6 and y is equal to -2378 then minimum of the function is -2378
+When x is -5 and y is equal to -2169 then minimum of the function is -2378
+When x is -4 and y is equal to -1646 then minimum of the function is -2378
+When x is -3 and y is equal to -1025 then minimum of the function is -2378
+When x is -2 and y is equal to -474 then minimum of the function is -2378
+When x is -1 and y is equal to -113 then minimum of the function is -2378
+When x is 0 and y is equal to -14 then minimum of the function is -2378
+When x is 1 and y is equal to -201 then minimum of the function is -2378
+When x is 2 and y is equal to -650 then minimum of the function is -2378
+When x is 3 and y is equal to -1289 then minimum of the function is -2378
+When x is 4 and y is equal to -1998 then minimum of the function is -2378
+When x is 5 and y is equal to -2609 then minimum of the function is -2609
+When x is 6 and y is equal to -2906 then minimum of the function is -2906
+When x is 7 and y is equal to -2625 then minimum of the function is -2906
+When x is 8 and y is equal to -1454 then minimum of the function is -2906
+When x is 9 and y is equal to 967 then minimum of the function is -2906
+When x is 10 and y is equal to 5046 then minimum of the function is -2906
+[Inferior 1 (process 7880) exited with code 0112]
+(gdb) q
+]0;brandon.nguyen1@csa2:~/assignment_1brandon.nguyen1@csa2:~/assignment_1$ exit
+exit
+
+Script done on 2020-02-03 22:44:39-07:00
