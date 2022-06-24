@@ -1,2 +1,1 @@
-# Assembly-Langauge-Practice-CPSC-355-
-WINTER 2020 
+# Assembly Langauge Practice (CPSC 355)
